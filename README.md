@@ -13,10 +13,10 @@ https://seedsecuritylabs.org/Labs_20.04/Networking/Mitnick_Attack/
 ## Steps to create environment required for Mitnick Attack
 
 1. Setting up docker environment and newtork
-**docker-compose down**
-**docker-compose build**
-**docker-compose up**
-**dockps**
+*docker-compose down**
+*docker-compose build**
+*docker-compose up**
+*dockps**
 
 2. Configure X-Terminal to allow free access by trusted-server
 **docksh container_id_of_XTerminal**
@@ -38,7 +38,7 @@ You would be able to see the date of the x-terminal on server terminal which mea
  
 5. Silent the server by stopping it or with syn flood attack
 
-#The above 5 steps creates the necessary condition that enabled Mitnick to perform his attack
+The above 5 steps creates the necessary condition that enabled Mitnick to perform his attack
 
 
 ## Steps to run the attack
@@ -47,13 +47,13 @@ You would be able to see the date of the x-terminal on server terminal which mea
 2. After this, X-terminal will send a SYN packet to establish rsh session from it's side, receive the packet and send SYN + ACK message. (Run spoof-synack.py)
 3. Implant a backdoor in X-terminal( Run backdoor.py)
 
-#After performing above 3 steps, attacker can gain access to X-Terminal's remote shell from any machine and do anything!
+After performing above 3 steps, attacker can gain access to X-Terminal's remote shell from any machine and do anything!
 
 ## Detection
 1. Run the script spoof-detection.py on X-terminal
 2. Repeat the attack using above steps.
 
-#You will find that the detection script will alert the X-Terminal system and print the message that it is been send spoof packects.
+You will find that the detection script will alert the X-Terminal system and print the message that it is been send spoof packects.
 
 
 
