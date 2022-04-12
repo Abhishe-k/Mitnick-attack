@@ -13,22 +13,22 @@ https://seedsecuritylabs.org/Labs_20.04/Networking/Mitnick_Attack/
 ## Steps to create environment required for Mitnick Attack
 
 1. Setting up docker environment and newtork
-*docker-compose down*
-*docker-compose build*
-*docker-compose up*
-*dockps*
+** docker-compose down
+** docker-compose build
+** docker-compose up
+** dockps
 
 2. Configure X-Terminal to allow free access by trusted-server
-**docksh container_id_of_XTerminal**
-**su seed**
-**cd**
-**touch .rhosts**
-**echo server_ip > .rhosts**
-**chmod 644 .rhosts**
+** docksh container_id_of_XTerminal
+** su seed
+** cd
+** touch .rhosts
+** echo server_ip > .rhosts
+** chmod 644 .rhosts
 
 3. On trusted-server, check if our configurations from step 2 work
-**su seed**
-**rsh x-terminal_ip date**
+** su seed
+** rsh x-terminal_ip date
 You would be able to see the date of the x-terminal on server terminal which means server can access X-terminal's remote shell without authentication
 
 4. Now from x-terminal ping the server or register server ip and mac in arp cache (in root folder)
