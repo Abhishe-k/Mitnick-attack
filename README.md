@@ -13,10 +13,10 @@ https://seedsecuritylabs.org/Labs_20.04/Networking/Mitnick_Attack/
 ## Steps to create environment required for Mitnick Attack
 
 1. Setting up docker environment and newtork
-*docker-compose down**
-*docker-compose build**
-*docker-compose up**
-*dockps**
+*docker-compose down*
+*docker-compose build*
+*docker-compose up*
+*dockps*
 
 2. Configure X-Terminal to allow free access by trusted-server
 **docksh container_id_of_XTerminal**
